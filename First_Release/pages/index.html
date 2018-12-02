@@ -778,12 +778,17 @@
                 <div class="col-lg-4">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-bell fa-fw"></i> Task Submission
+                            Task Submission
                         </div>
 
-                        <form style="margin: 10px">
+                        <form style="margin: 10px" action="/submit-task" method="post">
                             <label for="task">Task</label>
-                            <input type="textarea" id="task" name="task"></input>
+                            <input class="form-control" type="textarea" rows="4" cols="50" id="task" name="task"></input>
+                            <br />
+                            <label for="assignee">Assignee</label>
+                            <input class="form-control" type="textarea" rows="4" cols="50" id="assignee" name="assignee"></input>
+                            <br />
+                            <button type="submit" class="btn btn-primary">Submit</button>
                         </form>
                     </div>
                         <!-- /.panel-body -->
